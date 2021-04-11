@@ -1,9 +1,7 @@
 <template>
-    <el-container class="m-home">
-        <el-header>
-          <Header></Header>
-        </el-header>
-        <el-main>
+    <el-container>
+        <el-header style="background:pink">Header-post</el-header>
+        <el-main style="padding:0" class="content">
             <div class="container">
                 <el-row>
                     <el-col :xs="24" :sm="24" :md="{span:17,offset:1}" :lg="{span:17,offset:1}" :xl="{span:17,offset:1}" class="post-container" style="background: yellow">
@@ -19,24 +17,53 @@
 </template>
 
 <script>
-
-import Header from '@/components/Header.vue'
-
-
 export default {
   data () {
     return {
     }
-  },
-  components: {
-    Header
   },
   created () {
   }
 }
 </script>
 <style lang="scss" scoped>
-.intro-header{
-  background-image: url(../assets/home-bg.jpg);
+// 房志梅-test
+div {
+  min-height: 800px;
+  background: blue;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .post-container,
+  .sidebar-container {
+    padding-right: 5%;
+  }
+}
+@media (min-width: 768px) {
+  .post-container {
+    padding-right: 5%;
+  }
 }
 </style>

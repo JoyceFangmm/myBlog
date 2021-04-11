@@ -1,0 +1,65 @@
+.flex{
+    display: flex;
+    display: -webkit-box;
+    flex-direction: row;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    align-items: center;
+    -webkit-box-align: center;
+    box-sizing: border-box;
+}
+
+/* change default Element-UI */
+.el-header,
+.el-main{
+    padding: 0 !important;
+}
+
+.el-header{
+    height: auto !important;
+    margin-bottom: 20px;
+}
+
+/* custome UI */
+/* // 房志梅-test */
+.el-row div,.el-col, .el-row, .container {
+    min-height: 2000px;
+    background: blue;
+  }
+  
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .post-container,
+    .sidebar-container {
+      padding-right: 5%;
+    }
+  }
+  @media (min-width: 768px) {
+    .post-container {
+      padding-right: 5%;
+    }
+  }
+  

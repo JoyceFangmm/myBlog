@@ -1,9 +1,9 @@
 <template>
-    <el-container class="m-home">
+    <el-container class="m-category">
         <el-header>
           <Header></Header>
         </el-header>
-        <el-main>
+        <el-main style="padding:0" class="content">
             <div class="container">
                 <el-row>
                     <el-col :xs="24" :sm="24" :md="{span:17,offset:1}" :lg="{span:17,offset:1}" :xl="{span:17,offset:1}" class="post-container" style="background: yellow">
@@ -19,16 +19,14 @@
 </template>
 
 <script>
-
 import Header from '@/components/Header.vue'
-
 
 export default {
   data () {
     return {
     }
   },
-  components: {
+  components:{
     Header
   },
   created () {
@@ -37,6 +35,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .intro-header{
-  background-image: url(../assets/home-bg.jpg);
+  background-image: url(../assets/category-bg.jpeg);
 }
 </style>

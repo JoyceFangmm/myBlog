@@ -1,5 +1,5 @@
 <template>
-    <el-container class="m-home">
+    <el-container class="m-tags">
         <el-header>
           <Header></Header>
         </el-header>
@@ -19,16 +19,14 @@
 </template>
 
 <script>
-
 import Header from '@/components/Header.vue'
-
 
 export default {
   data () {
     return {
     }
   },
-  components: {
+  components:{
     Header
   },
   created () {
@@ -37,6 +35,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .intro-header{
-  background-image: url(../assets/home-bg.jpg);
+  background-image: url(../assets/tags-bg.jpg);
 }
 </style>
